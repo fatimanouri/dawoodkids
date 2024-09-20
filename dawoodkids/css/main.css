@@ -1,0 +1,179 @@
+.main {
+  top: -20px;
+}
+.bg-first-section-main {
+  height: 40rem;
+  background-image: url("./../images/قناة-الداوود-1536x559.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.services-section {
+  top: -5rem;
+}
+.bg-services-section {
+  height: 8rem;
+  background-repeat: no-repeat;
+  background-size: 150% 100%;
+}
+.top-bg-services-section {
+  background-image: url("./../images/blue-top-section2.webp");
+  background-position: bottom center;
+}
+.bottom-bg-services-section {
+  background-image: url("./../images/blue-botom_section2.webp");
+  background-position: top center;
+}
+.services-section-content {
+  padding-top: 2rem;
+}
+.service-article {
+  min-width: 22rem;
+  width: calc(calc(100% / 3) - 20px);
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+.service-article-link {
+  flex-direction: column;
+}
+.article-img-wrapper {
+  width: 20rem;
+  height: 20rem;
+  border: 2px dashed var(--color-white);
+}
+.spin-image-service-article-wrapper {
+  width: 15rem;
+  height: 15rem;
+  animation: spin-right 3s linear 0s infinite;
+  animation-play-state: paused;
+}
+.spin-image-service-article-wrapper::after {
+  content: "";
+  width: 4.5rem;
+  height: 4.5rem;
+  position: absolute;
+  border-radius: 50%;
+  background-image: url("./../images/info-box_planet-02.png"),
+    linear-gradient(#fff, #fff);
+  background-position: center;
+  top: -5px;
+  left: -25px;
+  animation: spin-left 3s linear 0s infinite;
+  animation-play-state: paused;
+}
+.service-article-link:hover .spin-image-service-article-wrapper,
+.service-article-link:hover .spin-image-service-article-wrapper::after {
+  animation-play-state: running;
+}
+.article-title {
+  font-size: 3.2rem;
+  -webkit-line-clamp: 3;
+}
+.comming-soon-text > span {
+  font-size: 1.8rem;
+}
+.comming-soon-text::after {
+  content: url("./../images/icon-right.svg");
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform 0.5s;
+}
+.comming-soon-text:hover::after {
+  transform: rotateZ(-180deg);
+}
+.membership-section-title {
+  color: #ef3d6e;
+  font-size: 4.8rem;
+  margin-bottom: 2rem;
+}
+.membership-article {
+  width: calc(calc(100% / 4) - 30px);
+  min-width: 260px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.membership-article-content {
+  background-color: var(--color-white);
+  border-radius: 3rem;
+}
+.membership-article-content_part-one {
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  flex-direction: column;
+  padding: 3rem 2rem;
+  min-height :  22rem;
+}
+.membership-article-circle-bg,
+.membership-article-circle-bg::after,
+.membership-article-circle-bg::before {
+  content: "";
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--color-white);
+}
+.membership-article-circle-bg {
+  left: 50%;
+  top: -2rem;
+  transform: translateX(-50%);
+}
+.membership-article-circle-bg::after {
+  left: 5rem;
+}
+.membership-article-circle-bg::before {
+  right: 5rem;
+}
+.membership-article-title {
+  font-size: 3rem;
+  -webkit-line-clamp: 2;
+}
+.membership-article-price {
+  color: var(--color-brown);
+  font-size: 2.5rem;
+  -webkit-line-clamp: 1;
+}
+.special-offer-article {
+  font-size: 2rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 3rem;
+  bottom: -1.6rem;
+}
+.membership-article-content_part-two {
+  background-color: var(--color-white);
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  padding: 3rem 2rem;
+  font-size: 1.6rem;
+  color: var(--color-dark-purple);
+  -webkit-line-clamp: 14;
+  min-height : 47rem;
+}
+.membership-article-description {
+  margin-bottom : 1rem;
+}
+.membership-section-article-link {
+  padding: 1.2rem 3rem;
+  font-size: 1.8rem;
+  border-radius: 1rem;
+  transition: background-color 0.5s;
+}
+.membership-article:nth-child(odd) .membership-section-article-link:hover {
+  background-color: var(--color-light-blue);
+}
+.membership-article:nth-child(even) .membership-section-article-link:hover {
+  background-color: var(--color-pink);
+}
+.membership-section-article-link::before {
+  content: url("./../images/shopping-cart.svg");
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+

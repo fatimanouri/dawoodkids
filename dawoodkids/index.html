@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawood Kids TV</title>
+    <link rel="icon" type="image/x-icon" href="./images/info-box_planet-02.png"/>
+    <link rel="stylesheet" href="./css/style.css" type="text/css"/>
+</head>
+<body>
+    <header id="header-1" class="header position-relative bg-yellow">
+        <nav class="navbar-header height-100 px-10px d-flex-justify-content-center-align-items-center">
+            <button class="menu-icon-btn d-none">
+                <img src="./images/menu-icon.svg" alt="menu-icon" width="100%" height="100%"/>
+            </button>
+            <a href="#" class="logo-wrapper">
+                <img class="logo" src="./images/Logo.png" alt="logo"/>
+            </a>
+            <div class="header-menu-container height-100 flex-grow-1">
+                <div class="height-100 w-100 responsive-header-menu-wrapper"> 
+                    <div class="responsive-menu-logo-close-icon d-none">
+                        <a href="#"><img class="responsive-menu-logo" src="./images/Logo.png" alt="logo" width="100px"/></a>
+                        <span class="close-icon"></span>
+                    </div>
+                    <ul class="header-menu height-100 position-relative d-flex-justify-content-center-align-items-center gap-0">
+                        <li class="header-menu-item d-none text-transform-uppercase px-10px font-weight-900">
+                            <a href="#" class="header-menu-item-link">my account</a>
+                        </li>
+                        <li class="header-menu-item position-relative text-transform-uppercase px-10px font-weight-900">
+                            <a href="#" class="header-menu-item-link "><span>home</span></a>
+                        </li>
+                        <li class="header-menu-item position-relative text-white text-transform-uppercase px-10px font-weight-900">
+                            <span  class="header-menu-item-link d-flex-justify-content-center-align-items-center">
+                                <span>dawood products</span>
+                                <span class="plus-icon position-relative d-inline-block"></span>
+                                <span class="header-menu-third-item-right-icon d-none"></span>
+                            </span>
+                            <ul class="sub-menu position-absolute rounded-10px px-10px py-10px">
+                                <li class="sub-menu-item text-transform-uppercase px-10px py-10px">
+                                    <a href="#" class="sub-menu-item-link d-block">WATCH</a>
+                                </li>
+                                <li class="sub-menu-item text-transform-uppercase px-10px py-10px">
+                                    <a href="#" class="sub-menu-item-link d-block text-transform-capitalize">Arabic-Alphabet-En</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-menu-item position-relative text-transform-uppercase px-10px font-weight-900 ">
+                            <a href="#" class="header-menu-item-link "><span>about us</span></a>
+                        </li>
+                        <li class="header-menu-item position-relative text-transform-uppercase px-10px font-weight-900">
+                            <a href="#" class="header-menu-item-link "><span>contact us</span></a>
+                        </li>
+                        <li class="header-menu-item position-relative text-transform-uppercase px-10px font-weight-900">
+                            <a href="#" class="header-menu-item-link "><span>shop</span></a>
+                        </li>
+                        <li class="header-menu-item position-relative text-transform-uppercase px-10px font-weight-900">
+                            <a href="#" class="header-menu-item-link "><span>application</span></a>
+                        </li>
+                        <li class="header-menu-item position-relative text-transform-uppercase px-10px font-weight-900">
+                            <a href="#" class="header-menu-item-link "><span>videos</span></a>
+                        </li>
+                        <span class="lavalamp position-absolute bg-purple rounded-5px"></span>
+                    </ul>
+                </div>
+            </div>
+            <div class="private-account-link_shop-basket-btn_search-btn_container height-100 d-flex-justify-content-center-align-items-center px-10px">
+                <a href="#" class="private-account-link bg-blue position-relative font-weight-700 text-transform-uppercase rounded-20px">
+                    <span class="text-white">my account</span>
+                    <svg class="private-acount-link-bg-svg">
+                        <rect width="153" height="32" x="7" y="7" rx="15" ry="15"></rect>
+                    </svg>
+                </a>
+                <span class="shop-basket-btn button-with-external-line"></span>
+                <div class="search-container position-relative">
+                    <span class="search-icon button-with-external-line position-relative">
+                        <span class="search-circle position-absolute rounded-50"></span>
+                        <span class="search-line position-absolute"></span>
+                    </span>
+                    <div class="search-form-container position-absolute rounded-20px">
+                        <form class="search-form w-100 d-flex-justify-content-center-align-items-center rounded-20px">
+                            <input type="search" class="search-input flex-grow-1"/>
+                            <button type="submit" class="search-submit-btn">
+                                <img src="./images/search-ison.svg" alt="search-icon"/>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="pop-up selected-products-wrapper">
+            <div class="selected-products bg-white px-10px py-10px d-flex-justify-content-center-align-items-flexStart flex-wrap">
+                <span class="no-products-text text-transform-capitalize">no products in the card</span>
+            </div>
+        </div>
+    </header>
+    <header id="header-2" class="header position-relative bg-white">
+        <nav class="navbar-header height-100 px-10px d-flex-justify-content-center-align-items-center">
+            <button class="menu-icon-btn d-none">
+                <img src="./images/menu-icon.svg" alt="menu-icon" width="100%" height="100%"/>
+            </button>
+            <a href="#" class="logo-wrapper">
+                <img class="logo" src="./images/Logo.png" alt="logo"/>
+            </a>
+            <div class="header-menu-container height-100 flex-grow-1">
+                <div class="height-100 w-100 responsive-header-menu-wrapper"> 
+                    <div class="responsive-menu-logo-close-icon d-none">
+                        <a href="#"><img class="responsive-menu-logo" src="./images/Logo.png" alt="logo" width="100px"/></a>
+                        <span class="close-icon"></span>
+                    </div>
+                    <ul class="header-menu height-100 position-relative d-flex-justify-content-center-align-items-center gap-0">
+                        <li class="header-menu-item d-none text-transform-uppercase px-10px font-weight-900">
+                            <a href="#" class="header-menu-item-link">my account</a>
+                        </li>
+                        <li class="header-menu-item position-relative text-transform-uppercase px-10px font-weight-900">
+                            <a href="#" class="header-menu-item-link "><span>home</span></a>
+                        </li>
+                        <li class="header-menu-item position-relative text-white text-transform-uppercase px-10px font-weight-900">
+                            <span  class="header-menu-item-link d-flex-justify-content-center-align-items-center">
+                                <span>dawood products</span>
+                                <span class="plus-icon position-relative d-inline-block"></span>
+                                <span class="header-menu-third-item-right-icon d-none"></span>
+                            </span>
+                            <ul class="sub-menu position-absolute rounded-10px px-10px py-10px">
+                                <li class="sub-menu-item text-transform-uppercase px-10px py-10px">
+                                    <a href="#" class="sub-menu-item-link d-block">WATCH</a>
+                                </li>
+                                <li class="sub-menu-item text-transform-uppercase px-10px py-10px">
+                                    <a href="#" class="sub-menu-item-link d-block text-transform-capitalize">Arabic-Alphabet-En</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-menu-item position-relative text-transform-uppercase px-10px font-weight-900 ">
+                            <a href="#" class="header-menu-item-link "><span>about us</span></a>
+                        </li>
+                        <li class="header-menu-item position-relative text-transform-uppercase px-10px font-weight-900">
+                            <a href="#" class="header-menu-item-link "><span>contact us</span></a>
+                        </li>
+                        <li class="header-menu-item position-relative text-transform-uppercase px-10px font-weight-900">
+                            <a href="#" class="header-menu-item-link "><span>shop</span></a>
+                        </li>
+                        <li class="header-menu-item position-relative text-transform-uppercase px-10px font-weight-900">
+                            <a href="#" class="header-menu-item-link "><span>application</span></a>
+                        </li>
+                        <li class="header-menu-item position-relative text-transform-uppercase px-10px font-weight-900">
+                            <a href="#" class="header-menu-item-link "><span>videos</span></a>
+                        </li>
+                        <span class="lavalamp position-absolute bg-purple rounded-5px"></span>
+                    </ul>
+                </div>
+            </div>
+            <div class="private-account-link_shop-basket-btn_search-btn_container height-100 d-flex-justify-content-center-align-items-center px-10px">
+                <a href="#" class="private-account-link bg-blue position-relative font-weight-700 text-transform-uppercase rounded-20px">
+                    <span class="text-white">my account</span>
+                    <svg class="private-acount-link-bg-svg">
+                        <rect width="153" height="32" x="7" y="7" rx="15" ry="15"></rect>
+                    </svg>
+                </a>
+                <span class="shop-basket-btn button-with-external-line"></span>
+                <div class="search-container position-relative">
+                    <span class="search-icon button-with-external-line position-relative">
+                        <span class="search-circle position-absolute rounded-50"></span>
+                        <span class="search-line position-absolute"></span>
+                    </span>
+                    <div class="search-form-container position-absolute rounded-20px">
+                        <form class="search-form w-100 d-flex-justify-content-center-align-items-center rounded-20px">
+                            <input type="search" class="search-input flex-grow-1"/>
+                            <button type="submit" class="search-submit-btn">
+                                <img src="./images/search-ison.svg" alt="search-icon"/>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="pop-up selected-products-wrapper">
+            <div class="selected-products bg-white px-10px py-10px d-flex-justify-content-center-align-items-flexStart flex-wrap">
+                <span class="no-products-text text-transform-capitalize">no products in the card</span>
+            </div>
+        </div>
+    </header>
+    <main class="main position-relative ">
+        <section class="bg-first-section-main container"></section>
+        <section class="services-section position-relative">
+            <section class="top-bg-services-section bg-services-section w-100"></section>
+            <section class="services-section-content-wrapper bg-blue">
+                <div class="services-section-content container d-flex-justify-content-center-align-items-flexStart flex-wrap">
+                    <article class="service-article flex-grow-1">
+                        <a href="#" class="service-article-link d-flex-justify-content-center-align-items-center">
+                            <div class="article-img-wrapper rounded-50 d-flex-justify-content-center-align-items-center position-relative">
+                                <span class="spin-image-service-article-wrapper position-relative"></span>
+                                <img class="img-article position-absolute-top-center-left-center" src="./images/Dawood-pvty2d5bflzx7jblucvbwpzm3e59yfs2f2hk6kbkqs.png" alt="quran with dawood" width="170px" height="170px" >
+                            </div>
+                            <div class="article-title-wrapper">
+                                <h3 class="article-title give-me-ellipsis text-center font-weight-900">
+                                    <span class="text-transform-capitalize">quran with dawood</span>
+                                </h3>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="service-article flex-grow-1">
+                        <a href="#" class="service-article-link d-flex-justify-content-center-align-items-center">
+                            <div class="article-img-wrapper rounded-50 d-flex-justify-content-center-align-items-center position-relative">
+                                <span class="spin-image-service-article-wrapper position-relative"></span>
+                                <img class="img-article position-absolute-top-center-left-center" src="./images/Dane-pvty57lq4jw6d16s835nyi4uue4a9g2t55lhhq3nwk.png" alt="learn arabic with dane" width="170px" height="170px" >
+                            </div>
+                            <div class="article-title-wrapper">
+                                <h3 class="article-title give-me-ellipsis text-center font-weight-900">
+                                    <span class="text-transform-capitalize">learn arabic with dane</span>
+                                </h3>
+                            </div>
+                            <div>
+                                <p href="#" class="comming-soon-text ">
+                                    <span class="text-transform-capitalize font-weight-700">comming soon...</span>
+                                </p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="service-article flex-grow-1">
+                        <a href="#" class="service-article-link d-flex-justify-content-center-align-items-center">
+                            <div class="article-img-wrapper rounded-50 d-flex-justify-content-center-align-items-center position-relative">
+                                <span class="spin-image-service-article-wrapper position-relative"></span>
+                                <img class="img-article position-absolute-top-center-left-center" src="./images/Manar-pvty4l1lkj1ame3jvtemantsl57h4pl921xtz3141w.png" alt="stories" width="170px" height="170px" >
+                            </div>
+                            <div class="article-title-wrapper">
+                                <h3 class="article-title give-me-ellipsis text-center font-weight-900">
+                                    <span class="text-transform-capitalize">stories</span>
+                                </h3>
+                            </div>
+                        </a>
+                    </article>   
+                </div>
+            </section>
+            <section class="bottom-bg-services-section bg-services-section w-100"></section>
+        </section>
+        <section class="membership-section container">
+            <h2 class="membership-section-title text-center text-transform-capitalize font-weight-900">vip membership</h2>
+            <div class="membership-articles-wrapper w-100 d-flex-justify-content-center-align-items-flexStart flex-wrap ">
+                <article class="membership-article">
+                    <div class="membership-article-content w-100">
+                        <div class="membership-article-content_part-one  bg-light-blue text-white position-relative d-flex-justify-content-center-align-items-center">
+                            <span class="membership-article-circle-bg"></span>
+                            <h3 class="membership-article-title give-me-ellipsis text-transform-capitalize font-weight-900">
+                                <span class="d-block text-center">one month</span>
+                                <span class="d-block text-center">vip membership</span>
+                            </h3>
+                            <span class="membership-article-price give-me-ellipsis text-transform-uppercase font-weight-700">3.60 omr</span>
+                            <span class="special-offer-article text-transform-uppercase bg-purple position-absolute font-weight-700">special offer</span>
+                        </div>
+                        <div class="membership-article-content_part-two text-transform-capitalize font-weight-700 give-me-ellipsis">
+                            <p class="membership-article-description  text-center">one-month dawood VIP membership</p>
+                            <p class="membership-article-description text-center">ar section free use (access to flash cards PDF you can print them and enjoy)</p>
+                            <p class="membership-article-description text-center">offline use of some features</p>
+                            <p class="membership-article-description text-center">app vip videos</p>
+                            <p class="membership-article-description text-center">any updates in vip section are included</p>
+                            <p class="membership-article-description text-center">website vip videos</p>
+                            <p class="membership-article-description text-center">9 percentage</p>
+                            <p class="membership-article-description text-center">discount dawood shop</p>
+                            <p class="membership-article-description text-center">VIP games (coming soon)</p>
+                            <p class="membership-article-description text-center">printable activities soon</p>
+                        </div>
+                    </div>
+                    <a href="#" class="membership-section-article-link bg-pink font-weight-700 text-transform-capitalize">
+                        <span class="membership-section-article-link-text">choose plan</span>
+                    </a>
+                </article>
+                <article class="membership-article">
+                    <div class="membership-article-content">
+                        <div class="membership-article-content_part-one bg-purple text-white position-relative d-flex-justify-content-center-align-items-center">
+                            <span class="membership-article-circle-bg"></span>
+                            <h3 class="membership-article-title give-me-ellipsis text-transform-capitalize font-weight-900">
+                                <span class="d-block text-center">three month</span>
+                                <span class="d-block text-center">vip membership</span>
+                            </h3>
+                            <span class="membership-article-price give-me-ellipsis text-transform-uppercase font-weight-700">7.35 omr</span>
+                            <span class="special-offer-article text-transform-uppercase bg-light-blue position-absolute font-weight-700">special offer</span>
+                        </div>
+                        <div class="membership-article-content_part-two text-transform-capitalize font-weight-700 give-me-ellipsis">
+                            <p class="membership-article-description text-center">one-month dawood VIP membership</p>
+                            <p class="membership-article-description text-center">ar section free use (access to flash cards PDF you can print them and enjoy)</p>
+                            <p class="membership-article-description text-center">offline use of some features</p>
+                            <p class="membership-article-description text-center">app vip videos</p>
+                            <p class="membership-article-description text-center">any updates in vip section are included</p>
+                            <p class="membership-article-description text-center">website vip videos</p>
+                            <p class="membership-article-description text-center">9 percentage</p>
+                            <p class="membership-article-description text-center">discount dawood shop</p>
+                            <p class="membership-article-description text-center">VIP games (coming soon)</p>
+                            <p class="membership-article-description text-center">printable activities soon</p>
+                        </div>
+                    </div>
+                    <a href="#" class="membership-section-article-link bg-light-blue font-weight-700 text-transform-capitalize">
+                        <span class="membership-section-article-link-text">choose plan</span>
+                    </a>
+                </article>
+                <article class="membership-article">
+                    <div class="membership-article-content">
+                        <div class="membership-article-content_part-one bg-light-blue text-white position-relative d-flex-justify-content-center-align-items-center">
+                            <span class="membership-article-circle-bg"></span>
+                            <h3 class="membership-article-title give-me-ellipsis text-transform-capitalize font-weight-900">
+                                <span class="d-block text-center">six month</span>
+                                <span class="d-block text-center">vip membership</span>
+                            </h3>
+                            <span class="membership-article-price give-me-ellipsis text-transform-uppercase font-weight-700">11.94 omr</span>
+                            <span class="special-offer-article bg-purple text-transform-uppercase position-absolute font-weight-700">special offer</span>
+                        </div>
+                        <div class="membership-article-content_part-two text-transform-capitalize give-me-ellipsis font-weight-700">
+                            <p class="membership-article-description text-center">one-month dawood VIP membership</p>
+                            <p class="membership-article-description text-center">ar section free use (access to flash cards PDF you can print them and enjoy)</p>
+                            <p class="membership-article-description text-center">offline use of some features</p>
+                            <p class="membership-article-description text-center">app vip videos</p>
+                            <p class="membership-article-description text-center">any updates in vip section are included</p>
+                            <p class="membership-article-description text-center">website vip videos</p>
+                            <p class="membership-article-description text-center">9 percentage</p>
+                            <p class="membership-article-description text-center">discount dawood shop</p>
+                            <p class="membership-article-description text-center">VIP games (coming soon)</p>
+                            <p class="membership-article-description text-center">printable activities soon</p>
+                        </div>
+                    </div>
+                    <a href="#" class="membership-section-article-link bg-pink font-weight-700 text-transform-capitalize">
+                        <span class="membership-section-article-link-text">choose plan</span>
+                    </a>
+                </article>
+                <article class="membership-article">
+                    <div class="membership-article-content">
+                        <div class="membership-article-content_part-one bg-purple text-white position-relative d-flex-justify-content-center-align-items-center">
+                            <span class="membership-article-circle-bg"></span>
+                            <h3 class="membership-article-title give-me-ellipsis text-transform-capitalize font-weight-900">
+                                <span class="d-block text-center">one year</span>
+                                <span class="d-block text-center">vip membership</span>
+                            </h3>
+                            <span class="membership-article-price give-me-ellipsis text-transform-uppercase font-weight-700">19.68 omr</span>
+                            <span class="special-offer-article text-transform-uppercase bg-light-blue position-absolute font-weight-700">special offer</span>
+                        </div>
+                        <div class="membership-article-content_part-two text-transform-capitalize give-me-ellipsis font-weight-700">
+                            <p class="membership-article-description text-center">one-month dawood VIP membership</p>
+                            <p class="membership-article-description text-center">ar section free use (access to flash cards PDF you can print them and enjoy)</p>
+                            <p class="membership-article-description text-center">offline use of some features</p>
+                            <p class="membership-article-description text-center">app vip videos</p>
+                            <p class="membership-article-description text-center">any updates in vip section are included</p>
+                            <p class="membership-article-description text-center">website vip videos</p>
+                            <p class="membership-article-description text-center">9 percentage</p>
+                            <p class="membership-article-description text-center">discount dawood shop</p>
+                            <p class="membership-article-description text-center">VIP games (coming soon)</p>
+                            <p class="membership-article-description text-center">printable activities soon</p>
+                        </div>
+                    </div>
+                    <a href="#" class="membership-section-article-link bg-light-blue font-weight-700 text-transform-capitalize">
+                        <span class="membership-section-article-link-text">choose plan</span>
+                    </a>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer-top-bg-section"></section>
+        <section class="footer-main-section position-relative">
+            <img class="footer-bgImage-1 position-absolute" src="./images/books.png" alt="books"/>
+            <img class="footer-bgImage-2 position-absolute" src="./images/stars.png" alt="stars"/>
+            <div class="footer-main-section-content container d-flex-justify-content-center-align-items-flexStart flex-wrap">
+                <section class="website-about-section flex-grow-1 d-flex-direction-column-justify-content-flexStart-align-items-center">
+                    <img class="logo mb-20px" src="./images/Logo.png" alt="logo" width="100px" height="50px">
+                    <span class="website-address text-white">http://dawoodkids.com/</span>
+                    <div class="socialNetworks-image-wrapper d-flex-justify-content-center-align-items-center" >
+                        <img class="facebook-image" src="./images/facebookj.png" alt="facebook" width="20px" height="20px"/>
+                        <img class="instagram-image" src="./images/instagramj.png" alt="instagram" width="20px" height="20px"/>
+                        <img class="youtube-image" src="./images/youtubej.png" alt="youtube" width="20px" height="20px"/>
+                    </div>
+                    <div class="animated-text-wrapper">
+                        <span class="animated-text text-white"></span>
+                    </div>
+                </section>
+                <section class="ourContacts-section flex-grow-1 d-flex-direction-column-justify-content-flexStart-align-items-center">
+                    <h2 class="ourContacts-section-title mb-20px text-transform-capitalize text-white font-weight-900">our contacts</h2>
+                    <div class="company-location w-100 d-flex-direction-column-justify-content-flexStart-align-items-center">
+                        <img class="location-img" src="./images/loaction.png" alt="location" width="40px" height="45px"/>
+                        <address class="company-address text-white">18th november st-muscat-sultanate of oman</address>
+                    </div>
+                    <div class="company-email w-100 d-flex-direction-column-justify-content-flexStart-align-items-center"> 
+                        <img class="email-img" src="./images/email.png" alt="email" width="40px" height="35px">
+                        <a class="company-emailAddress text-white" href="mailto:info@dawoodkids.com">info@dawoodkids.com</a>
+                    </div>
+                </section>
+                <section class="instagram-section flex-grow-1 d-flex-direction-column-justify-content-flexStart-align-items-center">
+                    <h2 class="instagram-section-title mb-20px text-transform-capitalize text-white font-weight-900">instagram</h2>
+                    <div class="instagram-posts-wrapper w-100 d-flex-justify-content-center-align-items-center flex-wrap">
+                        <a class="instagram-post position-relative" href="#" >
+                            <img class="instagram-post-image" src="./images/bag.jpg" alt="bag" width="100%" height="100%"/>
+                            <img class="instagram-post-movie-icon position-absolute-top-center-left-center" src="./images/play.png" alt="play"/>
+                        </a>
+                        <a class="instagram-post position-relative" href="#" >
+                            <img class="instagram-post-image" src="./images/book.jpg" alt="book" width="100%" height="100%"/>
+                            <img class="instagram-post-image-icon position-absolute" src="./images/two-rounded-equal-squares-outlines-symbol.png" alt="two-rounded-equal-squares" width="15px" height="15px"/>
+                        </a>
+                        <a class="instagram-post position-relative " href="#" >
+                            <img class="instagram-post-image" src="./images/paper.jpg" alt="paper" width="100%" height="100%"/>
+                            <img class="instagram-post-movie-icon position-absolute-top-center-left-center" src="./images/play.png" alt="play"/>
+                        </a>
+                        <a class="instagram-post position-relative" href="#" >
+                            <img class="instagram-post-image" src="./images/boy.jpg" alt="boy" width="100%" height="100%"/>
+                            <img class="instagram-post-image-icon position-absolute" src="./images/two-rounded-equal-squares-outlines-symbol.png" alt="two-rounded-equal-squares" width="15px" height="15px"/>
+                        </a>
+                        <a class="instagram-post position-relative" href="#" >
+                            <img class="instagram-post-image" src="./images/girl.jpg" alt="girl" width="100%" height="100%"/>
+                            <img class="instagram-post-movie-icon position-absolute-top-center-left-center" src="./images/play.png" alt="play"/>
+                        </a>
+                        <a class="instagram-post position-relative" href="#" >
+                            <img class="instagram-post-image" src="./images/girl1.jpg" alt="girl1" width="100%" height="100%"/>
+                            <img class="instagram-post-movie-icon position-absolute-top-center-left-center" src="./images/play.png" alt="play"/>
+                        </a>
+                    </div>
+                    <a class="instagram-page-link text-transform-capitalize d-flex-justify-content-center-align-items-center" href="#">
+                        <img src="./images/instagram-icon.svg" alt="instagram" width="15px" height="15px" width="100%" height="100%"/>
+                        <span>follow on instagram</span>
+                    </a>
+                </section>
+                <section class="openHours-section flex-grow-1 d-flex-direction-column-justify-content-flexStart-align-items-center">
+                    <h2 class="openHours-section-title mb-20px text-transform-capitalize text-white font-weight-900">open hours</h2>
+                    <div class="time-wrapper w-100 bg-blue text-white">
+                        <div class="working-time-wrapper d-flex-justify-content-center-align-items-center mb-20px">
+                            <span class="days-week font-weight-700 text-transform-capitalize">sun-thurs</span>
+                            <span class="dot flex-grow-1"></span>
+                            <span class="working-time">8am - 7pm</span>
+                        </div>
+                        <div class="off-time-wrapper d-flex-justify-content-center-align-items-center mb-20px">
+                            <span class="days-week font-weight-700 text-transform-capitalize">fri-sat</span>
+                            <span class="dot flex-grow-1"></span>
+                            <span class="off-time">closed</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="footer-copyRight-section">
+            <div class="copyRight-section-content container text-center">
+                <span>Copyright © 2021 dawoodkids by tilal. All Rights Reserved</span>
+            </div>
+        </section>
+        <button class="position_change_btn button-with-external-line"></button>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>  

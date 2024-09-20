@@ -1,0 +1,83 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.d-flex-justify-content-center-align-items-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.d-flex-justify-content-center-align-items-flexStart {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.d-flex-direction-column-justify-content-flexStart-align-items-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.position-absolute-top-center-left-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.button-with-external-line {
+  width: 40px;
+  height: 40px;
+  color: var(--color-white);
+  background-color: currentColor;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+.button-with-external-line::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  color: inherit;
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  border-radius: inherit;
+  border: 2px dashed currentColor;
+  animation: spin-left 3s linear 0s infinite;
+  animation-play-state: paused;
+}
+.button-with-external-line:hover::after {
+  animation-play-state: running;
+}
+.give-me-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+@keyframes spin-right {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes spin-left {
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}

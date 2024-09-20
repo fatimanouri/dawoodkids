@@ -1,0 +1,96 @@
+@font-face {
+  font-family: Nunito;
+  src: url("./../fonts/Nunito/Nunito-Regular.ttf");
+}
+@font-face {
+  font-family: Nunito;
+  font-weight: 900;
+  src: url("./../fonts/Nunito/Nunito-Black.ttf");
+}
+@font-face {
+  font-family: Nunito;
+  font-weight: 700;
+  src: url("./../fonts/Nunito/Nunito-Bold.ttf");
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-yellow: #ffc85b;
+  --color-brown: #7c570c;
+  --color-purple: #d868a3;
+  --color-blue: #45b3df;
+  --color-light-blue: #68a8d8;
+  --color-pink: #fa9db7;
+  --color-white: #fff;
+  --color-dark-purple: #12265a;
+  --bg-header: #fdc564;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge add Firefox */
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /*Firefox*/
+}
+body {
+  font-size: 1.4rem;
+  font-family: Nunito;
+  background: var(--color-yellow);
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+button,
+input {
+  outline: none;
+  border: none;
+}
+/* clears the ‘X’ from Internet Explorer */
+input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+.pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(39, 39, 39, 0.822);
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0;
+  transition : opacity 0.3s linear 0.2s;
+}
+.pop-up.active{
+  opacity : 1;
+  pointer-events: auto;
+  transition : opacity 0.3s linear;
+}

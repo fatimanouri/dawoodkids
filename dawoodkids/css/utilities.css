@@ -1,0 +1,89 @@
+.bg-blue {
+    background-color: var(--color-blue);
+}
+.bg-light-blue {
+    background-color: var(--color-light-blue);
+}
+.bg-yellow{
+    background-color : var(--color-yellow);
+}
+.bg-purple{
+    background-color: var(--color-purple);
+}
+.bg-pink{
+    background-color: var(--color-pink);
+}
+.bg-white{
+    background-color: var(--color-white);
+}
+.position-absolute{
+    position : absolute;
+}
+.position-relative{
+    position : relative;
+}
+.d-block{
+    display: block;
+}
+.d-inline-block{
+    display: inline-block;
+}
+.d-none{
+    display: none;
+}
+.flex-grow-1{
+    flex-grow:1;
+}
+.flex-wrap{
+    flex-wrap :wrap;
+}
+.gap-0{
+    gap :0;
+}
+.w-100{
+    width : 100%;
+}
+.height-100{
+    height : 100%;
+}
+.rounded-50{
+    border-radius : 50%;
+}
+.rounded-20px{
+    border-radius : 2rem;
+}
+.rounded-10px{
+    border-radius : 1rem;
+}
+.rounded-5px{
+    border-radius : 0.5rem;
+}
+.text-white{
+    color : var(--color-white);
+}
+.text-transform-capitalize{
+    text-transform : capitalize;
+}
+.text-transform-uppercase{
+    text-transform : uppercase;
+}
+.text-center{
+    text-align : center;
+}
+.font-weight-700{
+    font-weight : 700;
+}
+.font-weight-900{
+    font-weight : 900;
+}
+.mb-20px{
+    margin-bottom : 20px;
+}
+.px-10px{
+    padding-right : 1rem;
+    padding-left : 1rem;
+}
+.py-10px{
+    padding-top : 1rem;
+    padding-bottom : 1rem;
+}

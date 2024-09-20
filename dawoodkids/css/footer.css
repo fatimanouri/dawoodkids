@@ -1,0 +1,129 @@
+.footer{
+    background-color: var(--color-white);
+    font-size : 1.6rem;
+}
+.footer-top-bg-section{
+    height: 8rem;
+    background-repeat: no-repeat;
+    background-size: 150% 100%;
+    background-image: url("./../images/footer_bg.png");
+    background-position: bottom center;
+}
+.footer-main-section {
+    background-color : #2d4073;
+    padding-top : 1.5rem;
+}
+.footer-bgImage-1{
+    bottom : -3rem;
+    left : 1.5rem;
+}
+.footer-bgImage-2{
+    top : -3rem;
+    right : 1.5rem;
+}
+.footer-main-section-content>section{
+    min-width : 260px;
+    width : calc(calc(100% / 4) - 30px);
+}
+.website-about-section,
+.instagram-section,
+.ourContacts-section,
+.openHours-section{
+    gap : 1.5rem;
+    margin-bottom : 1rem;
+}
+.socialNetworks-image-wrapper{
+    gap :4rem;
+}
+.ourContacts-section-title,
+.instagram-section-title,
+.openHours-section-title{
+    font-size : 2.6rem;
+}
+.company-location,
+.company-email{
+    align-items: flex-start;
+    gap :1rem;
+}
+.instagram-posts-wrapper{
+    gap : 0.6rem;
+}
+.instagram-post{
+    margin-bottom : 0.6rem;
+    min-width : calc(calc(100% /3) - 4px);
+    max-width : calc(calc(100% /3) - 4px);
+    height : 100px;
+}
+.instagram-post::after{
+    content :"";
+    position: absolute;
+    top :0;
+    left :0;
+    width :100%;
+    height : 100%;
+    transition : background-color 0.4s;
+}
+.instagram-post:hover::after{
+    background-color: rgba(238, 238, 238, 0.2); 
+}
+.instagram-post-image{
+    object-fit: cover;
+}
+.instagram-post-image-icon{
+    top :5px;
+    right :5px;
+}
+.instagram-page-link{
+    font-size : 1.3rem;
+    background-color: #408bd1;
+    border-radius : 0.5rem;
+    padding : 0.8rem 1.5rem;
+    transition: background-color 0.4s;
+}
+.instagram-page-link:hover{
+    background-color: #359dff;
+}
+.working-time-wrapper,
+.off-time-wrapper{
+    justify-content: flex-start;
+}
+.time-wrapper{
+    border-radius : 1rem;
+    padding : 2rem 1rem;
+}
+.days-week{
+    font-size : 1.6rem;
+}
+.dot{
+    border-bottom: 2px dotted #fff;
+}
+.working-time,
+.off-time {
+    font-size : 1.8rem;
+}
+.footer-copyRight-section{
+    background-color: rgb(40, 40, 40);
+    color : var(--color-purple);
+    padding-top : 2rem;
+    padding-bottom: 2rem;
+}
+.position_change_btn {
+    width : 5rem;
+    height : 5rem;
+    position: fixed;
+    bottom : 2rem;
+    right : -6rem;
+    color : var(--color-yellow);
+    background-image: url("./../images/icon-right.svg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transform: rotate(-90deg) ;
+    transition : right 0.5s;
+}
+.position_change_btn::after {
+    top: -1rem;
+    left: -1rem;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+  }
